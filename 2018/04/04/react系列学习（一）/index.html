@@ -18,23 +18,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>CC-采购小程序总结 | Hexo</title>
-  <meta name="description" content="在本次小程序中遇到了较多问题。希望通过本次总结，深入分析问题原因，改变思考问题的角度，总结解决问题的方法，从而提高自己解决问题的能力。  本次遇到的问题主要分为三方面：小程序技术层面，UI交互，自身逻辑。 小程序技术层面本次要实现一个Tab选项卡功能。基本的功能包括  可左右滑动 选中tab可切换 选中tab如没在可见区域，需移动到中间。   按照需要实现的功能，有以下几种实现方案: scrol">
-<meta name="keywords" content="项目 小程序">
+  <title>react系列学习（一） | Hexo</title>
+  <meta name="description" content="目前，开始系统学习react。计划在学习过程中，记录学习过程中的问题和经验，以此巩固知识。本文记录React入门教程的学习过程。该教程从一个游戏开始，循序渐进的讲解了react的核心部分，本文只是个人的学习记录和总结。  如何开始本地开发在开始实践一门新的语言或框架之前，我们需要完成的第一步就是搭建本地开发环境。教程请点击如何创建并开始一个react app react的单向数据流子元素通过pr">
+<meta name="keywords" content="react">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CC-采购小程序总结">
-<meta property="og:url" content="http://yoursite.com/2018/03/26/first/index.html">
+<meta property="og:title" content="react系列学习（一）">
+<meta property="og:url" content="http://yoursite.com/2018/04/04/react系列学习（一）/index.html">
 <meta property="og:site_name" content="365个清晨和黄昏">
-<meta property="og:description" content="在本次小程序中遇到了较多问题。希望通过本次总结，深入分析问题原因，改变思考问题的角度，总结解决问题的方法，从而提高自己解决问题的能力。  本次遇到的问题主要分为三方面：小程序技术层面，UI交互，自身逻辑。 小程序技术层面本次要实现一个Tab选项卡功能。基本的功能包括  可左右滑动 选中tab可切换 选中tab如没在可见区域，需移动到中间。   按照需要实现的功能，有以下几种实现方案: scrol">
+<meta property="og:description" content="目前，开始系统学习react。计划在学习过程中，记录学习过程中的问题和经验，以此巩固知识。本文记录React入门教程的学习过程。该教程从一个游戏开始，循序渐进的讲解了react的核心部分，本文只是个人的学习记录和总结。  如何开始本地开发在开始实践一门新的语言或框架之前，我们需要完成的第一步就是搭建本地开发环境。教程请点击如何创建并开始一个react app react的单向数据流子元素通过pr">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/Animation%201.gif">
-<meta property="og:updated_time" content="2018-04-03T06:52:45.678Z">
+<meta property="og:updated_time" content="2018-04-09T03:58:33.334Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CC-采购小程序总结">
-<meta name="twitter:description" content="在本次小程序中遇到了较多问题。希望通过本次总结，深入分析问题原因，改变思考问题的角度，总结解决问题的方法，从而提高自己解决问题的能力。  本次遇到的问题主要分为三方面：小程序技术层面，UI交互，自身逻辑。 小程序技术层面本次要实现一个Tab选项卡功能。基本的功能包括  可左右滑动 选中tab可切换 选中tab如没在可见区域，需移动到中间。   按照需要实现的功能，有以下几种实现方案: scrol">
-<meta name="twitter:image" content="http://p68llyr2a.bkt.clouddn.com/Animation%201.gif">
+<meta name="twitter:title" content="react系列学习（一）">
+<meta name="twitter:description" content="目前，开始系统学习react。计划在学习过程中，记录学习过程中的问题和经验，以此巩固知识。本文记录React入门教程的学习过程。该教程从一个游戏开始，循序渐进的讲解了react的核心部分，本文只是个人的学习记录和总结。  如何开始本地开发在开始实践一门新的语言或框架之前，我们需要完成的第一步就是搭建本地开发环境。教程请点击如何创建并开始一个react app react的单向数据流子元素通过pr">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2018/03/26/first/index.html">
+  <link rel="canonical" href="http://yoursite.com/2018/04/04/react系列学习（一）/index.html">
   
     <link rel="alternate" href="/atom.xml" title="365个清晨和黄昏" type="application/atom+xml">
   
@@ -334,21 +332,21 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#小程序技术层面"><span class="toc-number">1.</span> <span class="toc-text">小程序技术层面</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#scroll-view-swiper-实现方案"><span class="toc-number">1.1.</span> <span class="toc-text">scroll-view + swiper 实现方案</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scroll-view-srcoll-view-实现方案"><span class="toc-number">1.2.</span> <span class="toc-text">scroll-view + srcoll-view 实现方案</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UI交互"><span class="toc-number">2.</span> <span class="toc-text">UI交互</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于用户操作"><span class="toc-number">2.1.</span> <span class="toc-text">关于用户操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#检查UI"><span class="toc-number">2.2.</span> <span class="toc-text">检查UI</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自身逻辑"><span class="toc-number">3.</span> <span class="toc-text">自身逻辑</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#如何开始本地开发"><span class="toc-number">1.</span> <span class="toc-text">如何开始本地开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#react的单向数据流"><span class="toc-number">2.</span> <span class="toc-text">react的单向数据流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#子元素通过props获取父元素传递的数据"><span class="toc-number">2.1.</span> <span class="toc-text">子元素通过props获取父元素传递的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#子元素修改父元素的数据"><span class="toc-number">2.2.</span> <span class="toc-text">子元素修改父元素的数据</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件的构造函数"><span class="toc-number">3.</span> <span class="toc-text">组件的构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#状态提升"><span class="toc-number">4.</span> <span class="toc-text">状态提升</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#react的不可变性"><span class="toc-number">4.1.</span> <span class="toc-text">react的不可变性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#函数定义组件"><span class="toc-number">4.2.</span> <span class="toc-text">函数定义组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Keys"><span class="toc-number">4.3.</span> <span class="toc-text">Keys</span></a></li></ol></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-first" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-react系列学习（一）" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      CC-采购小程序总结
+      react系列学习（一）
     </h1>
   
 
@@ -356,80 +354,107 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/03/26/first/" class="article-date">
-	  <time datetime="2018-03-26T09:20:53.000Z" itemprop="datePublished">2018-03-26</time>
+	<a href="/2018/04/04/react系列学习（一）/" class="article-date">
+	  <time datetime="2018-04-04T02:43:40.000Z" itemprop="datePublished">2018-04-04</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/项目-小程序/">项目 小程序</a>
+	<a class="article-tag-link" href="/tags/react/">react</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/03/26/first/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/04/04/react系列学习（一）/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
         <blockquote>
-<p>在本次小程序中遇到了较多问题。希望通过本次总结，深入分析问题原因，改变思考问题的角度，总结解决问题的方法，从而提高自己解决问题的能力。</p>
+<p>目前，开始系统学习react。计划在学习过程中，记录学习过程中的问题和经验，以此巩固知识。本文记录<a href="http://react.yubolun.com/tutorial/tutorial.html" target="_blank" rel="noopener">React入门教程</a>的学习过程。该教程从一个游戏开始，循序渐进的讲解了react的核心部分，本文只是个人的学习记录和总结。</p>
 </blockquote>
-<p>本次遇到的问题主要分为三方面：小程序技术层面，UI交互，自身逻辑。</p>
-<h3 id="小程序技术层面"><a href="#小程序技术层面" class="headerlink" title="小程序技术层面"></a>小程序技术层面</h3><p>本次要实现一个Tab选项卡功能。基本的功能包括</p>
-<ul>
-<li>可左右滑动</li>
-<li>选中tab可切换</li>
-<li>选中tab如没在可见区域，需移动到中间。</li>
-</ul>
-<p><img src="http://p68llyr2a.bkt.clouddn.com/Animation%201.gif" alt="image"></p>
-<p>按照需要实现的功能，有以下几种实现方案:</p>
-<h4 id="scroll-view-swiper-实现方案"><a href="#scroll-view-swiper-实现方案" class="headerlink" title="scroll-view + swiper 实现方案"></a>scroll-view + swiper 实现方案</h4><blockquote>
-<p>该方案的优点是实现方案简单， 缺点是只适合满屏的切换。</p>
-</blockquote>
-<p>本方案存在的问题：</p>
+<h3 id="如何开始本地开发"><a href="#如何开始本地开发" class="headerlink" title="如何开始本地开发"></a>如何开始本地开发</h3><p>在开始实践一门新的语言或框架之前，我们需要完成的第一步就是搭建本地开发环境。教程请点击<a href="http://react.yubolun.com/docs/add-react-to-a-new-app.html" target="_blank" rel="noopener">如何创建并开始一个react app</a></p>
+<h3 id="react的单向数据流"><a href="#react的单向数据流" class="headerlink" title="react的单向数据流"></a>react的单向数据流</h3><h4 id="子元素通过props获取父元素传递的数据"><a href="#子元素通过props获取父元素传递的数据" class="headerlink" title="子元素通过props获取父元素传递的数据"></a>子元素通过props获取父元素传递的数据</h4><p>在父元素引用子元素<board>时，子元素采用类似html元素属性的形式获取参数，如下：</board></p>
+<pre><code class="javascript">&lt;Board
+             squares = {current.squares}
+             onClick = {(i) =&gt; this.handleClick(i)}
+             winnerLine = {winnerLine}
+           /&gt;
+</code></pre>
+<p>在子元素<board>内部，通过this.props获得从父元素传递来的参数。</board></p>
+<pre><code class="javascript">&lt;Square key={i}
+              value={this.props.squares[i]}
+              onClick={() =&gt; this.props.onClick(i)}
+              highlight={this.props.winnerLine.includes(i)}
+      /&gt;
+</code></pre>
+<h4 id="子元素修改父元素的数据"><a href="#子元素修改父元素的数据" class="headerlink" title="子元素修改父元素的数据"></a>子元素修改父元素的数据</h4><p>按照react单向数据流的设计模式，我们不能直接在子元素内部修改父元素的数据。</p>
+<p>惯例的做法是：通过props传递一个父组件当中的事件处理函数到子组件中。</p>
+<h3 id="组件的构造函数"><a href="#组件的构造函数" class="headerlink" title="组件的构造函数"></a>组件的构造函数</h3><p>在<code>constructor()</code>中，必须调用super()，方法才能在继承父类的子类中正确获取到类型（疑问：什么叫类型的this）的this。</p>
+<h3 id="状态提升"><a href="#状态提升" class="headerlink" title="状态提升"></a>状态提升</h3><p>当遇到同时获取多个子组件数据，或两个子组件之间需要相互通讯的情况时，把子组件的state数据提升至其共同的父组件当中保存。之后父组件可以通过props将状态数据传递到子组件中，这样应用当中的状态数据就能够更方便地交流共享了。</p>
+<pre><code class="javascript">&lt;!-- Square组件 --&gt;
+class Square extends React.Component {
+  render() {
+    return (
+      &lt;button className=&quot;square&quot; onClick={() =&gt; this.props.onClick()}&gt;
+        {this.props.value}
+      &lt;/button&gt;
+    );
+  }
+}
+&lt;!-- Boared中调用子组件 --&gt;
+ return (
+      &lt;Square
+        value={this.state.squares[i]}
+        onClick={() =&gt; this.handleClick(i)}
+      /&gt;
+    );
+</code></pre>
+<p>在上面的代码中，每次被点击都会触发传人的onClick方法。捋一下这中间发生了什么：</p>
 <ol>
-<li>对于超出一屏的切换，上下滚动时，所有的面板会同时滚动；</li>
-<li>当每个面板内容不一致导致高度不同时，高度较小的面板会出现空白区域。</li>
+<li>添加onClick属性到内置的DOM元素button上让react开启了对点击事件的监听；</li>
+<li>当按钮被点击时，react会调用Square组件的<code>render()</code>方法中的<code>onClick</code>事件处理函数；</li>
+<li>事件处理函数触发了传入其中的<code>this.props.onClick</code>方法，这个方法是由Board传递给Square的。</li>
+<li>Board传递了<code>onClick={() =&gt; this.handleClick(i)</code>给Square，所以当Square中的事件处理函数被触发时，其实就是触发了Board当中的this.handleClick(i)方法。</li>
 </ol>
-<p><strong>结论</strong>： 使用swiper模拟tab只适合于满屏（或不满一屏）切换</p>
-<p>Tips:</p>
-<ul>
-<li>scroll-view不支持flex布局</li>
-</ul>
-<h4 id="scroll-view-srcoll-view-实现方案"><a href="#scroll-view-srcoll-view-实现方案" class="headerlink" title="scroll-view + srcoll-view 实现方案"></a>scroll-view + srcoll-view 实现方案</h4><blockquote>
-<p>tab选项及面板都使用scroll-view实现，优点：可任意定制功能，缺点：scroll-view组件自身带有缺陷。</p>
-</blockquote>
-<p>本方案存在的问题：</p>
+<h4 id="react的不可变性"><a href="#react的不可变性" class="headerlink" title="react的不可变性"></a>react的不可变性</h4><p>改变应用数据的方式一般分为两种。第一种时直接修改已有从变量的值；第二种则是将已有的变量替换为一个新的变量。</p>
+<p>直接修改数据</p>
+<pre><code class="js">var player = {score: 1, name: &#39;Jeff&#39;};
+player.score = 2;
+// Now player is {score: 2, name: &#39;Jeff&#39;}
+</code></pre>
+<p>替换修改数据</p>
+<pre><code class="js">var player = {score: 1, name: &#39;Jeff&#39;};
+
+var newPlayer = Object.assign({}, player, {score: 2});
+// Now player is unchanged, but newPlayer is {score: 2, name: &#39;Jeff&#39;}
+</code></pre>
+<p>两种方式的结果是一样的，但是第二种并没有改变之前已有的数据。通过这样的方式，我们可以得到几点好处：</p>
 <ol>
-<li>使用scroll-view后无法使用页面的下拉刷新。</li>
+<li>很轻松地实现 撤销/重做以及时间旅行</li>
+<li>记录变化</li>
+<li>在React当中判定何时重新渲染（如何定量分析这种优化？）</li>
 </ol>
-<h3 id="UI交互"><a href="#UI交互" class="headerlink" title="UI交互"></a>UI交互</h3><h4 id="关于用户操作"><a href="#关于用户操作" class="headerlink" title="关于用户操作"></a>关于用户操作</h4><ol>
-<li>一般，需要将用户的操作区域扩展到可利用的最大区域，以保证用户的可操作性。</li>
-</ol>
-<h4 id="检查UI"><a href="#检查UI" class="headerlink" title="检查UI"></a>检查UI</h4><p>拿到UI后，需要确认的部分包括</p>
-<ol>
-<li>完整性：需要包含拒绝授权页、内容（搜索）空白页、页面（分页）加载效果、按钮不同状态UI等；是否有文字过长/换行等特殊情况处理。</li>
-<li>统一性：不同页面的按钮、字体等需要保持一致，不一致的需要确认UI目的。</li>
-<li>合理性：从实现和用户角度等两方面考虑UI是否易于实现，易于操作。</li>
-</ol>
-<h3 id="自身逻辑"><a href="#自身逻辑" class="headerlink" title="自身逻辑"></a>自身逻辑</h3><blockquote>
-<p>自身并未形成一个高效合理的开发流程。</p>
-</blockquote>
-<p>目前，自己的开发流程存在的问题：</p>
-<ol>
-<li>在没有理顺逻辑的情况下就进入开发；</li>
-<li>对于有疑问的地方未能及时提出问题。</li>
-</ol>
-<p><strong>解决方案</strong></p>
-<ol>
-<li>对于新需求，新功能，一律画流程图，<a href="https://www.processon.com/" target="_blank" rel="noopener">流程图工具</a></li>
-<li>对于未能及时提出问题，是自身认知上存在问题。有疑问的地方，往往会导致沟通双方理解上的差异，所以不能想当然。</li>
-</ol>
+<h4 id="函数定义组件"><a href="#函数定义组件" class="headerlink" title="函数定义组件"></a>函数定义组件</h4><p>对于不需要this.state的组件，我们可以去掉组件的构造函数。更进一步的，React专门为只有render方法的组件提供了一种更简便的定义组件的方法：函数定义组件。</p>
+<p>只需要简单写一个以props为参数的function返回JSX元素就搞定了。</p>
+<pre><code class="js">function Square(props) {
+  return (
+    &lt;button className=&quot;square&quot; onClick={props.onClick}&gt;
+      {props.value}
+    &lt;/button&gt;
+  );
+}
+</code></pre>
+<p>仔细看上面的代码，会发现把onClick={() =&gt; props.onClick}修改为onClick={props.onClick}。注意不要写成onClick={props.onClick()}。否则props.onClick方法会在Square组件渲染时被直接触发而不是等到被点击触发，会导致render()方法被循环调用。</p>
+<h4 id="Keys"><a href="#Keys" class="headerlink" title="Keys"></a>Keys</h4><p>当你在react当中渲染列表时，react都会试着存储对应每个单独项的相关信息。如果你的组件包含state状态数据，那么这些状态数据必须被拍下，不管你的组件是怎么编写实现的。</p>
+<p><code>key</code>是react中使用的一种特殊的属性。当元素被创建时，react会将元素的key值和对应元素绑定存储起来。当一个列表被重新渲染时，react会根据较新的元素依据相应的key值来匹配之前的元素内容。</p>
+<p>当一个新的key至添加到列表当中时，表示有一个组件被创建；被删除时表示有一个组件被销毁；改变某个组件的key值，它会在下次渲染时被销毁并当作新的组件重新渲染。</p>
+<p><strong>强烈建议在渲染列表时添加keys值。</strong></p>
+<p>group_id:tGE8cZ0e4uFCBxPCN2NzSTs8udzoA<br>sign:89eaad853c6fe694a953004402db63e8<br>timestamp:1523245304</p>
 
       
     </div>
@@ -439,7 +464,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2018/03/26/first/" title="CC-采购小程序总结" target="_blank" rel="external">http://yoursite.com/2018/03/26/first/</a>
+      <a href="http://yoursite.com/2018/04/04/react系列学习（一）/" title="react系列学习（一）" target="_blank" rel="external">http://yoursite.com/2018/04/04/react系列学习（一）/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -488,9 +513,13 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2018/03/28/小程序总结/" title="微信小程序问题总结"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2018/04/26/工作备忘录-md/" title="工作备忘录.md"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
+    
+    <li class="next">
+      <a href="/2018/03/28/小程序总结/" title="微信小程序问题总结"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
   </ul>
   

@@ -18,16 +18,27 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hexo</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="365个清晨和黄昏">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <title>git系列学习（一）-廖雪峰教程 | Hexo</title>
+  <meta name="description" content="最近准备系统学习git，会学习几个相关教程。在学习过程中，会记录学习中的重点和问题，以此巩固，并方便后续的查询。  本地创建版本库 新建一个空目录，并打开： mkdir git-study cd git-study   在目录中创建一个版本： git init   新增一个readme.md文件，并把文件添加到暂存区： git add readme.md   把文件推送到本地版本库 git co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git系列学习（一）-廖雪峰教程">
+<meta property="og:url" content="http://yoursite.com/2018/04/27/git学习-廖雪峰教程/index.html">
 <meta property="og:site_name" content="365个清晨和黄昏">
+<meta property="og:description" content="最近准备系统学习git，会学习几个相关教程。在学习过程中，会记录学习中的重点和问题，以此巩固，并方便后续的查询。  本地创建版本库 新建一个空目录，并打开： mkdir git-study cd git-study   在目录中创建一个版本： git init   新增一个readme.md文件，并把文件添加到暂存区： git add readme.md   把文件推送到本地版本库 git co">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20000.png">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20001.png">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20000.png">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20002.png">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/0.jpg">
+<meta property="og:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%200.png">
+<meta property="og:updated_time" content="2018-05-03T02:07:15.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="365个清晨和黄昏">
+<meta name="twitter:title" content="git系列学习（一）-廖雪峰教程">
+<meta name="twitter:description" content="最近准备系统学习git，会学习几个相关教程。在学习过程中，会记录学习中的重点和问题，以此巩固，并方便后续的查询。  本地创建版本库 新建一个空目录，并打开： mkdir git-study cd git-study   在目录中创建一个版本： git init   新增一个readme.md文件，并把文件添加到暂存区： git add readme.md   把文件推送到本地版本库 git co">
+<meta name="twitter:image" content="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20000.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/index.html">
+  <link rel="canonical" href="http://yoursite.com/2018/04/27/git学习-廖雪峰教程/index.html">
   
     <link rel="alternate" href="/atom.xml" title="365个清晨和黄昏" type="application/atom+xml">
   
@@ -322,168 +333,207 @@
 </aside>
 
       
-      <main class="main" role="main">
-  
-  <div class="content article-list">
+      
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本地创建版本库"><span class="toc-number">1.</span> <span class="toc-text">本地创建版本库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地版本控制"><span class="toc-number">2.</span> <span class="toc-text">本地版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#版本回退"><span class="toc-number">2.1.</span> <span class="toc-text">版本回退</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作区和暂存区"><span class="toc-number">2.2.</span> <span class="toc-text">工作区和暂存区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#撤销修改"><span class="toc-number">2.3.</span> <span class="toc-text">撤销修改</span></a></li></ol></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-git学习-廖雪峰教程" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
+    <div class="article-header">
+      
+        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/27/git学习-廖雪峰教程/">git系列学习（一）-廖雪峰教程</a>
+    <h1 class="article-title" itemprop="name">
+      git系列学习（一）-廖雪峰教程
     </h1>
   
 
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
+      
+      <div class="article-meta">
+        <span class="article-date">
     <i class="icon icon-calendar-check"></i>
 	<a href="/2018/04/27/git学习-廖雪峰教程/" class="article-date">
-	  <time datetime="2018-04-27T07:57:04.000Z" itemprop="datePublished">4月 27</time>
+	  <time datetime="2018-04-27T07:57:04.000Z" itemprop="datePublished">2018-04-27</time>
 	</a>
 </span>
-    
-    
+        
+        
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/04/27/git学习-廖雪峰教程/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
+        
 
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/26/工作备忘录-md/">工作备忘录.md</a>
-    </h1>
-  
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/04/27/git学习-廖雪峰教程/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <blockquote>
+<p>最近准备系统学习git，会学习几个相关教程。在学习过程中，会记录学习中的重点和问题，以此巩固，并方便后续的查询。</p>
+</blockquote>
+<h2 id="本地创建版本库"><a href="#本地创建版本库" class="headerlink" title="本地创建版本库"></a>本地创建版本库</h2><ol>
+<li><p>新建一个空目录，并打开：</p>
+<pre><code class="js">mkdir git-study
+cd git-study
+</code></pre>
+</li>
+<li><p>在目录中创建一个版本：</p>
+<pre><code class="js">git init
+</code></pre>
+</li>
+<li><p>新增一个readme.md文件，并把文件添加到<strong>暂存区</strong>：</p>
+<pre><code class="js">git add readme.md
+</code></pre>
+</li>
+<li><p>把文件推送到<strong>本地版本库</strong></p>
+<pre><code class="js">git commit -m &quot;新增readme.md&quot;
+</code></pre>
+</li>
+</ol>
+<p>经过上面四个步骤，就在本地建立了一个版本库。</p>
+<h2 id="本地版本控制"><a href="#本地版本控制" class="headerlink" title="本地版本控制"></a>本地版本控制</h2><p>在进行各种操作之前，我们可能需要查看当前git库的各种状态。</p>
+<ol>
+<li><p>查看当前git库的状态</p>
+<pre><code class="js">git status
+</code></pre>
+</li>
+<li><p>如果发现git库中的readme.md有变化，我们想要查看变化内容：</p>
+<pre><code class="js">git diff readme.md
+</code></pre>
+</li>
+</ol>
+<h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>通过上面的学习，我已经能创建一个git版本库，并不断新增/修改。现在，我在本地工作目录中新增并修改了一些文件，并添加到了版本库中，下班前，我发现这次的修改都是不需要的。</p>
+<ol>
+<li>我首先查看我的提交历史<pre><code class="js">git log
+</code></pre>
+结果如下：</li>
+</ol>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20000.png" alt="image"></p>
+<ol start="2">
+<li>在git中，使用<strong>HEAD</strong>表示当前版本，上一个版本是<strong>HEAD^</strong>，上上个版本是<strong>HEAD^^</strong>，以此类推。一种简写方法是：HEAD~100，表示往上100个版本。<pre><code class="js">git reset --head HEAD^
+</code></pre>
+</li>
+</ol>
+<p>再查看提交Log：</p>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20001.png" alt="image"></p>
+<ol start="3">
+<li>在回退版本后，你又想恢复。这时你的窗口还没有关闭，你可以通过一步操作就实现目标：<pre><code class="js">git reset --head 2f97a62b1b7c25f6a5550b007dd8d8bb1580edc6
+</code></pre>
+</li>
+</ol>
+<p>操作完成后，我们再来查看Log，发现被我们回退的版本又回来了：</p>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20000.png" alt="image"></p>
+<ol start="4">
+<li>在回退版本后，你又想恢复。但是此时你的窗口已经关闭，你找不到目标版本的commit id:<br>下面的命令用来记录每一次操作记录：<pre><code class="js">git reflog
+</code></pre>
+结果如下：</li>
+</ol>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%20002.png" alt="image"></p>
+<p>在图中，我们可以找到任意一次操作的commit id。这样，我们就可以使用git reset回到任意一个版本。</p>
+<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><blockquote>
+<p>git和其他版本控制系统如svn的一个不同之处就是有暂存区的概念。</p>
+</blockquote>
+<ul>
+<li>工作区：在电脑里能看到的目录。</li>
+<li>版本库：工作区有一个隐藏目录.git，这个不是工作区，而是git的版本库。</li>
+</ul>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/0.jpg" alt="image"></p>
+<p>查看工作区和版本库里面最新版本的区别：</p>
+<pre><code class="js">git diff HEAD -- readme.md
+</code></pre>
+<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>凌晨两点，在readme.md中写了一句错误代码。准备提交的时候，发现了这个错误。这时，有以下几种解决方案：</p>
+<p><img src="http://p68llyr2a.bkt.clouddn.com/%E5%9B%BE%E5%83%8F%200.png" alt="image"></p>
+<ol>
+<li>手动删除（不建议）；</li>
+<li>使用git命令行:</li>
+</ol>
+<pre><code class="js">git checkout -- readme.md
+</code></pre>
+<p>该命令撤销的是工作区的修改，撤销暂存区需要使用另一个命令。</p>
+<p><strong>Tips</strong></p>
+<p>git checkout – file命令中的–很重要，没有–，就变成了“切换打另一个分支”。</p>
+<p>假设你在git add之后才发现了问题（即内容被添加到暂存区了），git提供了命令可以把暂存区的修改撤销掉，重新放到工作区：<br><code>` js</code></p>
 
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2018/04/27/git学习-廖雪峰教程/" title="git系列学习（一）-廖雪峰教程" target="_blank" rel="external">http://yoursite.com/2018/04/27/git学习-廖雪峰教程/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">清风归途</span><small class="ml-1x">骑着马去会会命运</small></a></h3>
+        <div></div>
+      </div>
+    </figure>
   </div>
+</div>
+
+
+    </div>
+  </article>
   
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/04/26/工作备忘录-md/" class="article-date">
-	  <time datetime="2018-04-26T05:28:44.000Z" itemprop="datePublished">4月 26</time>
-	</a>
-</span>
     
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/工作相关/">工作相关</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/04/26/工作备忘录-md/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
+  <section id="comments">
+  	
+       
+    <div id="uyan_frame"></div>
 
     
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
+  </section>
+
+
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/04/react系列学习（一）/">react系列学习（一）</a>
-    </h1>
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
   
-
-  </div>
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2018/04/26/工作备忘录-md/" title="工作备忘录.md"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
   
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/04/04/react系列学习（一）/" class="article-date">
-	  <time datetime="2018-04-04T02:43:40.000Z" itemprop="datePublished">4月 4</time>
-	</a>
-</span>
-    
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/react/">react</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/04/04/react系列学习（一）/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/28/小程序总结/">微信小程序问题总结</a>
-    </h1>
   
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/03/28/小程序总结/" class="article-date">
-	  <time datetime="2018-03-28T09:22:22.000Z" itemprop="datePublished">3月 28</time>
-	</a>
-</span>
-    
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/小程序/">小程序</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/03/28/小程序总结/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/26/first/">CC-采购小程序总结</a>
-    </h1>
-  
-
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2018/03/26/first/" class="article-date">
-	  <time datetime="2018-03-26T09:20:53.000Z" itemprop="datePublished">3月 26</time>
-	</a>
-</span>
-    
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/项目-小程序/">项目 小程序</a>
-  </span>
-
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/03/26/first/#comments" class="article-comment-link">评论</a></span>
-    
-  </p>
-</article>
-
+  <div class="bar-right">
     
   </div>
+  </div>
+</nav>
+  
 
-   
+
 </main>
 
       <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
@@ -520,6 +570,12 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+
+
     
     
 
